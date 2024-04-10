@@ -64,7 +64,7 @@
             <% @games.each do |game| %>
               <tr>
                 <td>
-                  <%= link_to  @user.name, user_path(game.user_id) %>
+                    <%= link_to  game.user.name, user_path(game.user_id) %>
                 </td>
                 <td><%= link_to game.title, game_path(game) %></td>
                 <td>
